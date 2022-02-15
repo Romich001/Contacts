@@ -67,17 +67,18 @@ public class PhoneBook {
         var field = scanner.nextLine();
         switch (field) {
             case "name":
-                contact.setName(ContactRecorder.receiveName(scanner));
+                contact.setName();
                 break;
             case "surname":
-                contact.setSurname(ContactRecorder.receiveSurname(scanner));
+                contact.setSurname();
                 break;
             case "number":
-                contact.setNumber(ContactRecorder.receiveNumber(scanner));
+                contact.setNumber();
                 break;
             default:
                 System.out.println("wrong PhoneBook -> edit");
         }
+        System.out.println("The record updated!");
 
     }
 

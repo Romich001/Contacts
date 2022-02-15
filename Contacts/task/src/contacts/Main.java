@@ -11,7 +11,7 @@ public class Main {
                 var action = scanner.nextLine();
                 switch (action) {
                     case "add":
-                        phoneBook.addContact(ContactRecorder.createContact(scanner));
+                        phoneBook.addContact(Person.build(scanner));
                         break;
                     case "remove":
                         phoneBook.remove(scanner);
